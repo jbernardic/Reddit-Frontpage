@@ -1,0 +1,36 @@
+.container{
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+.trendingTitle{
+    font-size: 0.85em;
+    margin: 14px 0px 8px;
+}
+.trending{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.trending > div{
+    flex-shrink: 1;
+    background: gray;
+    margin-right: 10px;
+    border-radius: 9px;
+    width: 238px;
+    height: 180px;
+}
+.trending > div:nth-of-type(4){
+    margin-right: 0px;
+}
+.title{
+    font-size: 1.1em;
+    margin: 80px 0px 0px 0px;
+}
+.trending > div > *{
+    margin-left: 15px;
+}
+.info{
+    font-size: 0.8em;
+    margin-top: 6px;
+}

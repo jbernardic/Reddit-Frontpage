@@ -1,0 +1,114 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFF;
+    border-bottom: 1px #EDEFF1 solid;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+}
+.logo > a{
+    display: flex;
+    align-items: center;
+}
+.logo > a > svg:nth-of-type(1){
+    width: 32px;
+    height: 32px;
+    padding: 8px 8px 8px 0px;
+}
+.logo > a > svg:nth-of-type(2){
+    width: 57px;
+    height: 18px;
+    margin-right: 20px;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 656px;
+    margin-right: 10px;
+}
+.searchBar > input{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    background-color: #F6F7F8;
+    border: 1px #EDEFF1 solid;
+    border-radius: 5px;
+    color: #1C1C1C;
+    font-size: 1.1em;
+    outline: none;
+}
+.searchBar > input:focus, input:hover{
+    border-color: #0079D3;
+    background: #FFFF;
+}
+.searchBar > i{
+    font-size: 1.2em;
+    position: absolute;
+    margin-left: 15px;
+    color:#878A8C;
+}
+.options{
+    display: flex;
+    align-items: center;
+}
+.loginOptions{
+    width: 256px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    vertical-align:middle;
+
+}
+.loginOptions > a{
+    width: 120px;
+    height: 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginButton{
+    border: 1px #0079D3 solid;
+    color: #0079D3;
+}
+.signupButton{
+    background: #0079D3;
+    color: white;
+}
+.userDropdown{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 70px;
+    background: none;
+    border: none;
+    margin-left: 8px;
+    padding: 0px 2px;
+    font-size: 1.2em;
+    color: #878A8C;
+    border: 1px #FFFF solid;
+    border-radius: 5px;
+    outline: none;
+}
+.userDropdown:focus{
+    border-color: #EDEFF1;
+}
+.userDropdown:hover{
+    border-color: #EDEFF1;
+    cursor: pointer;
+}
+.userDropdown > i:nth-of-type(1){
+    margin-left: 6px;
+    margin-right: 12px;
+}

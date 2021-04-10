@@ -1,7 +1,8 @@
 import Navbar from './components/Navbar';
-import Trending from './components/Trending'
-import './App.css';
+import Trending from './components/Trending';
 import Posts from './components/Posts';
+import Sidebar from './components/Sidebar';
+import './App.css';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Trending/>
       <div className="grid">
         <Posts/>
+        <Sidebar/>
       </div>
     </div>
     </>

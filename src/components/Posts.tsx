@@ -8,6 +8,9 @@ const Posts = () =>{
             <h4>Popular posts</h4>
             <PostFilter/>
             <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
         </div>
     );
 }

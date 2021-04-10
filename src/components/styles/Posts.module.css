@@ -1,7 +1,7 @@
 .posts{
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 10px;
 }
 .posts > div{
     background: #FFF;

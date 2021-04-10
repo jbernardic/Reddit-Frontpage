@@ -3,15 +3,16 @@ import styles from './styles/Sidebar.module.css';
 
 const Sidebar = () =>{
 
-    const contRef = useRef<HTMLDivElement>(null);
+    const linksRef = useRef<HTMLDivElement>(null);
     const [style, setStyle] = useState<CSSProperties>({
         position: "unset"
     });
 
     useEffect(() => {
+        let offsetY = linksRef.current?.offsetTop;
         window.onscroll = () =>{
-            if(!contRef || !contRef.current) return;
-            if(window.scrollY > contRef.current.offsetTop+27 - 65){
+            if(!offsetY) return;
+            if(window.scrollY > offsetY - 58){
                 setStyle({position: "fixed"});
             }
             else{
@@ -19,12 +20,21 @@ const Sidebar = () =>{
                 console.log("aa");
             }
         }
-    }, [])
+    }, [linksRef])
 
 
     return(
-        <div ref={contRef} className={styles.container}>
-            <div style={style} className={styles.links}>
+        <div className={styles.container}>
+            <div className={styles.comCats}>
+                <div>POPULAR COMMUNITIES<i className="fas fa-chevron-down"></i></div>
+                <div>GAMING<i className="fas fa-chevron-down"></i></div>
+                <div>SPORTS<i className="fas fa-chevron-down"></i></div>
+                <div>TV<i className="fas fa-chevron-down"></i></div>
+                <div>TRAVEL<i className="fas fa-chevron-down"></i></div>
+                <div>HEALTH & FITNESS<i className="fas fa-chevron-down"></i></div>
+                <div>FASHION<i className="fas fa-chevron-down"></i></div>
+            </div>
+            <div ref={linksRef} style={style} className={styles.links}>
                 <div>
                     <div><a href="/#">Help</a></div>
                     <div><a href="/#">Reddit App</a></div>

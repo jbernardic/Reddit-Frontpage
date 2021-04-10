@@ -1,0 +1,91 @@
+.post{
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    align-items: center;
+}
+.vote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F8F9FA;
+    height: 100%;
+}
+.vote > h4:nth-of-type(1) i{
+    margin-top: 12px;
+}
+.vote > h4 i{
+    color: #878A8C;
+    font-size: 1.5em;
+}
+.voteText{
+    font-size: 0.9em;
+    margin: 4px 0px;
+}
+.postContent{
+    padding-top: 8px;
+}
+.infoText{
+    font-size: 0.8rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+.joinButton{
+    border-radius: 25px;
+    background: #0079D3;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: 600;
+    padding: 4.75px 8px;
+    margin-right: 8px;
+}
+.joinButton > i{
+    margin-right: 5px;
+}
+.postTitle{
+    margin: 0px 8px;
+    font-weight: 600;
+    color: #222222;
+}
+.postBody{
+    padding: 5px 8px 10px;
+    font-size: 0.9rem;
+}
+.postOptions{
+    display: flex;
+    padding: 0px 8px;
+    align-items: center;
+}
+.postOptions >*{
+    text-decoration: none;
+    outline: none;
+    background: none;
+    color: #878A8C;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 8px;
+    margin-right: 2px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.postOptions i{
+    font-size: 0.9rem;
+    margin-right: 4px;
+}
+.postOptions > button:nth-of-type(3){
+    padding: 4px;
+    height: auto;
+}
+.postOptions > button:nth-of-type(3) i{
+    margin-right: 0px;
+}
+.postOptions >*:hover{
+    background: #EDEFF1;
+}

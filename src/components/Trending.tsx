@@ -6,24 +6,24 @@ const Trending = () =>{
             <div className={styles.title}><h4>Trending today</h4></div>
             <div className={styles.trending}>
                 <div>
-                    <h2 className={styles.postTitle}>Lorem</h2>
-                    <div className={styles.content}>Lorem ipsum dolor, sit amet consectetur adipisicing.</div>
-                    <div className={styles.info}><img alt=""/>ICON r/Lorem and more</div>
+                    <h2 className={styles.postTitle}> </h2>
+                    <div className={styles.content}> </div>
+                    <div className={styles.info}><img alt=""/> </div>
                 </div>
                 <div>
-                    <h2 className={styles.postTitle}>Lorem</h2>
-                    <div className={styles.content}>Lorem ipsum dolor, sit amet consectetur adipisicing.</div>
-                    <div className={styles.info}><img alt=""/>ICON r/Lorem and more</div>
+                    <h2 className={styles.postTitle}> </h2>
+                    <div className={styles.content}> </div>
+                    <div className={styles.info}><img alt=""/> </div>
                 </div>
                 <div>
-                    <h2 className={styles.postTitle}>Lorem</h2>
-                    <div className={styles.content}>Lorem ipsum dolor, sit amet consectetur adipisicing.</div>
-                    <div className={styles.info}><img alt=""/>ICON r/Lorem and more</div>
+                    <h2 className={styles.postTitle}> </h2>
+                    <div className={styles.content}> </div>
+                    <div className={styles.info}><img alt=""/> </div>
                 </div>
                 <div>
-                    <h2 className={styles.postTitle}>Lorem</h2>
-                    <div className={styles.content}>Lorem ipsum dolor, sit amet consectetur adipisicing.</div>
-                    <div className={styles.info}><img alt=""/>ICON r/Lorem and more</div>
+                    <h2 className={styles.postTitle}> </h2>
+                    <div className={styles.content}> </div>
+                    <div className={styles.info}><img alt=""/> </div>
                 </div>
             </div>
         </div>

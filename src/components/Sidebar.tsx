@@ -17,7 +17,6 @@ const Sidebar = () =>{
             }
             else{
                 setStyle({position: "unset"});
-                console.log("aa");
             }
         }
     }, [linksRef])

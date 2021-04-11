@@ -1,26 +1,52 @@
 import styles from './styles/Post.module.css'
 
-const Post = () =>{
+interface PostProps{
+    title: string,
+    body: string,
+    author: string,
+    subreddit: string,
+    time: number,
+    score: number,
+    num_comments: number,
+    key: number
+}
+
+function getTime(time:number){
+    time = new Date().getTime() - time*1000;
+    let years = Math.floor(time/3.154e+10);
+    if(years > 0) return years + " years";
+    let months = Math.floor(time/2.628e+9);
+    if(months > 0) return months + " months";
+    let days = Math.floor(time/8.64e+7);
+    if(days > 0) return days + " days";
+    let hours = Math.floor(time/3.6e+6);
+    if(hours > 0) return hours + " hours";
+    let minutes = Math.floor(time/1.66667e-5);
+    return minutes + " minutes";
+}
+
+const Post:React.FC<PostProps> = (props) =>{
+    let score:string = props.score < 1000 ? props.score+"" : Math.round(props.score/100)/10+"k";
+    let num_comments:string = props.num_comments < 1000 ? props.num_comments+"" : Math.round(props.num_comments/100)/10+"k";
+    let time:string = getTime(props.time);
+
+    //console.log(props.time);
     return(
         <div className={styles.post}>
                 <div className={styles.vote}>
-                    <h4><i className="fas fa-caret-up"></i></h4>
-                    <span className={styles.voteText}><h4>Vote</h4></span>
-                    <h4><i className="fas fa-caret-down"></i></h4>
+                    <i className="fas fa-caret-up"></i>
+                    <span className={styles.voteText}>{score}</span>
+                    <i className="fas fa-caret-down"></i>
                 </div>
                 <div className={styles.postContent}>
                     <div className={styles.info}>
-                        <span className={styles.infoText}>r/Lorem • Posted by u/Lorem 2 hours ago</span>
+                        <span className={styles.infoText}><h4>r/{props.subreddit}&nbsp;</h4> • Posted by u/{props.author} {time} ago</span>
                         <button className={styles.joinButton}><i className="fas fa-plus"></i>Join</button>
                     </div>
-                    <div className={styles.postTitle}>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quas inventore voluptas.
-                    </div>
-                    <div className={styles.postBody}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur eligendi fugit sequi optio dicta. Ipsa tempora vel accusamus debitis est incidunt itaque minus corporis at a. Voluptatibus explicabo, voluptas delectus ab eum laborum nisi, velit repellendus impedit, soluta quae laudantium! A iusto sapiente ad iste nesciunt impedit nemo placeat.
-                    </div>
+                    <div className={styles.postTitle}>{props.title}</div>
+                    <div className={styles.postBody} dangerouslySetInnerHTML={{__html: props.body}}></div>
                     <div className={styles.postOptions}>
-                        <a className={styles.commentsBtn} href="/#" ><i className="fas fa-comment-dots"></i>24 Comments</a>
+                        <a className={styles.commentsBtn} href="/#" ><i className="fas fa-comment-dots"></i>{num_comments} Comments</a>
                         <button className={styles.shareBtn}><i className="fas fa-share"></i>Share</button>
                         <button className={styles.saveBtn}><i className="fas fa-save"></i>Save</button>
                         <button className={styles.moreBtn}><i className="fas fa-ellipsis-h"></i></button>

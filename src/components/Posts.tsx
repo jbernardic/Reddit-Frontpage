@@ -23,6 +23,7 @@ const Posts = () =>{
     }
 
     useEffect(() =>{
+        updatePosts(postsUpdated);
         document.addEventListener("scroll", () =>{
             let maxScroll = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             if(window.scrollY > maxScroll-1000 && !isUpdating){

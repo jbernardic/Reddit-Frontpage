@@ -44,7 +44,10 @@ const Post:React.FC<PostProps> = (props) =>{
                         <button className={styles.joinButton}><i className="fas fa-plus"></i>Join</button>
                     </div>
                     <div className={styles.postTitle}>{props.title}</div>
-                    <div className={styles.postBody} dangerouslySetInnerHTML={{__html: props.body}}></div>
+                    <div className={styles.postBody}>
+                        <p>{props.body}</p>
+                        <div> </div>
+                    </div>
                     <div className={styles.postOptions}>
                         <a className={styles.commentsBtn} href="/#" ><i className="fas fa-comment-dots"></i>{num_comments} Comments</a>
                         <button className={styles.shareBtn}><i className="fas fa-share"></i>Share</button>

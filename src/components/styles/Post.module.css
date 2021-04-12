@@ -1,8 +1,10 @@
 .post{
-    max-width: 634px;
     display: grid;
     grid-template-columns: 1fr 15fr;
     align-items: center;
+}
+.postContent{
+    word-break: break-word;
 }
 .vote{
     display: flex;

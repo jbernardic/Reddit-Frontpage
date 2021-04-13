@@ -5,6 +5,7 @@ interface PostProps{
     body: string,
     author: string,
     subreddit: string,
+    name: string,
     time: number,
     score: number,
     num_comments: number,

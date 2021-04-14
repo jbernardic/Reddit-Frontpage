@@ -14,16 +14,13 @@
     justify-content: center;
     align-items: center;
     outline: none;
-    color: #878A8C;
+    color: #0079D3;
     background: #FFF;
     font-weight: 600;
 }
 .filterBox > button:hover{
     cursor: pointer;
     background: #EDEFF1 !important;
-}
-.o{
-    background: #F6F7F8 !important;
 }
 .filterBox > button > h4{
     font-size: 1em;
@@ -32,8 +29,6 @@
     font-size: 1.2em;
     margin-right: 8px;
 }
-.dropDown i{
-    margin-left: 6px;
-    margin-right: 0px;
-    font-size: 1em;
+.s{
+    background: #F6F7F8 !important;
 }

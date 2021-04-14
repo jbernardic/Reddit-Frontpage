@@ -6,14 +6,19 @@ import {useEffect, useState} from 'react'
 let postsLoaded = 0;
 let isLoading = false;
 let after = "";
-const loadedPosts:any[] = [];
+let filterValue = "hot";
+let loadedPosts:any[] = [];
 const Posts = () =>{
     const [posts, setPosts] = useState<any[]>([]);
+    const [filter, setFilter] = useState(filterValue);
+    const setFilterFunc = (filter: string) => {
+        setFilter(filter);
+        filterValue = filter;
+    }
 
     function loadPosts(amount: number){
         isLoading = true;
-
-        return fetch(`https://www.reddit.com/r/popular.json?&limit=${amount}&after=${after}`)
+        return fetch(`https://www.reddit.com/r/popular/${filterValue}/.json?&limit=${amount}&after=${after}`)
         .then(res => res.json())
         .then(data => data.data.children.map((item:any, idx:number) =>{
                 let text:string = item.data.selftext;
@@ -31,9 +36,14 @@ const Posts = () =>{
                 after = data[data.length-1].props.name;
             });
         }
-
     useEffect(() =>{
+        setPosts([]);
+        loadedPosts = [];
+        postsLoaded = 0;
+        after = "";
         loadPosts(20);
+    }, [filter]);
+    useEffect(() =>{        
         document.addEventListener("scroll", () =>{
             let maxScroll = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             let scrollY = Math.floor(window.scrollY)+1;
@@ -42,11 +52,10 @@ const Posts = () =>{
             }
         })
     }, []);
-
     return(
         <div className={styles.posts}>
             <h4>Popular posts</h4>
-            <PostFilter/>
+            <PostFilter filter={filter} setFilter={setFilterFunc}/>
             {posts.map((post) =>{
                 return post;
             })}

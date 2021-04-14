@@ -14,6 +14,7 @@ interface PostProps{
 
 function getTime(time:number){
     time = new Date().getTime() - time*1000;
+    console.log(time);
     let years = Math.floor(time/3.154e+10);
     if(years > 0) return years + " years";
     let months = Math.floor(time/2.628e+9);
@@ -22,8 +23,10 @@ function getTime(time:number){
     if(days > 0) return days + " days";
     let hours = Math.floor(time/3.6e+6);
     if(hours > 0) return hours + " hours";
-    let minutes = Math.floor(time/1.66667e-5);
-    return minutes + " minutes";
+    let minutes = Math.floor(time/60000);
+    if(minutes > 0) return minutes + " minutes";
+    let seconds = Math.floor(time/1000);
+    return seconds + " seconds";
 }
 
 const Post:React.FC<PostProps> = (props) =>{
@@ -31,7 +34,7 @@ const Post:React.FC<PostProps> = (props) =>{
     let num_comments:string = props.num_comments < 1000 ? props.num_comments+"" : Math.round(props.num_comments/100)/10+"k";
     let time:string = getTime(props.time);
 
-    //console.log(props.time);
+    console.log(props.time);
     return(
         <div className={styles.post}>
                 <div className={styles.vote}>

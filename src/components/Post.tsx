@@ -48,9 +48,9 @@ const Post:React.FC<PostProps> = (props) =>{
                     </div>
                     <div className={styles.postTitle}>{props.title}</div>
                     <div style={props.body === "" && props.thumbnail.url === "" ? {display: "none"} : {}} className={styles.postBody}>
-                        <img alt="" src={props.thumbnail.url} style={{width: "100%"}}/>
+                        <img style = {props.thumbnail.url === "" ? {display: "none"} : {}} alt="" src={props.thumbnail.url}/>
                         <p>{props.body}</p>
-                        <div> </div>
+                        <div style={props.thumbnail.url !== "" ? {display: "none"} : {}}> </div>
                     </div>
                     <div className={styles.postOptions}>
                         <a className={styles.commentsBtn} href="/#" ><i className="fas fa-comment-dots"></i>{num_comments} Comments</a>

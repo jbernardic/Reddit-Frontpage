@@ -25,7 +25,7 @@ const Posts = () =>{
                 let textLength = text.length;
                 text = text.slice(0, 700);
                 let img_url:string = item.data.url_overridden_by_dest;
-                if(img_url !== undefined && !img_url.includes(".png") && !img_url.includes(".jpg")){
+                if(img_url === undefined || (!img_url.includes(".png") && !img_url.includes(".jpg"))){
                     img_url = "";
                 }
                 if(textLength > 700) text+="...";

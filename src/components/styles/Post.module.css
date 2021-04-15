@@ -83,6 +83,9 @@
 .postBody p{
     margin: 0px;
 }
+.postBody img{
+    width: 80%;
+}
 .postOptions{
     display: flex;
     padding: 0px 8px;

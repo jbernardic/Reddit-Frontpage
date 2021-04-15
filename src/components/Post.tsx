@@ -9,12 +9,12 @@ interface PostProps{
     time: number,
     score: number,
     num_comments: number,
-    key: number
+    key: number,
+    thumbnail: {url: string, width: number, height: number}
 }
 
 function getTime(time:number){
     time = new Date().getTime() - time*1000;
-    console.log(time);
     let years = Math.floor(time/3.154e+10);
     if(years > 0) return years + " years";
     let months = Math.floor(time/2.628e+9);
@@ -34,7 +34,6 @@ const Post:React.FC<PostProps> = (props) =>{
     let num_comments:string = props.num_comments < 1000 ? props.num_comments+"" : Math.round(props.num_comments/100)/10+"k";
     let time:string = getTime(props.time);
 
-    console.log(props.time);
     return(
         <div className={styles.post}>
                 <div className={styles.vote}>
@@ -48,7 +47,8 @@ const Post:React.FC<PostProps> = (props) =>{
                         <button className={styles.joinButton}><i className="fas fa-plus"></i>Join</button>
                     </div>
                     <div className={styles.postTitle}>{props.title}</div>
-                    <div className={styles.postBody}>
+                    <div style={props.body === "" && props.thumbnail.url === "" ? {display: "none"} : {}} className={styles.postBody}>
+                        <img alt="" src={props.thumbnail.url} style={{width: "100%"}}/>
                         <p>{props.body}</p>
                         <div> </div>
                     </div>

@@ -11,8 +11,8 @@ const Sidebar = () =>{
     useEffect(() => {
         let offsetY = linksRef.current?.offsetTop;
         window.onscroll = () =>{
-            if(!offsetY || linksRef.current?.style.display === "none") return;
-            if(window.scrollY > offsetY - 54){
+            if(!offsetY || window.innerWidth <= 960) return;
+            if(window.scrollY > offsetY - 58){
                 setStyle({position: "fixed"});
             }
             else{

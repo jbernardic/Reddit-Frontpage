@@ -87,6 +87,7 @@
     width: 70%;
     max-height: 500px;
     object-fit:cover;
+    margin-left: 12.5%;
 }
 .postOptions{
     display: flex;

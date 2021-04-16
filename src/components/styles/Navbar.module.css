@@ -113,3 +113,8 @@ header{
     margin-left: 6px;
     margin-right: 12px;
 }
+@media screen and (max-width: 960px) {
+    .loginOptions{
+        display: none;
+    }
+}

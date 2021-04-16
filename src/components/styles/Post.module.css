@@ -84,7 +84,9 @@
     margin: 0px;
 }
 .postBody img{
-    width: 80%;
+    width: 70%;
+    max-height: 500px;
+    object-fit:cover;
 }
 .postOptions{
     display: flex;

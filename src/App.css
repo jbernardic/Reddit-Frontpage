@@ -23,7 +23,14 @@ html, body{
 .grid{
   display: grid;
   grid-template-columns: 2fr 1fr;
-  width: 975px;
+  max-width: 975px;
+  width: 80vw;
   column-gap: 24px;
-
+}
+@media screen and (max-width: 960px) {
+  .grid{
+    display: unset;
+    width: 92vw;
+    min-width: min-content;
+  }
 }

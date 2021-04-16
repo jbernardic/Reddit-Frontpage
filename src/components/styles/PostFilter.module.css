@@ -2,8 +2,11 @@
     display: flex;
     column-gap: 8px;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0px;
     margin-bottom: 6px;
+}
+.filterBox > button:nth-of-type(1){
+    margin-left: 10px;
 }
 .filterBox > button{
     height: auto;

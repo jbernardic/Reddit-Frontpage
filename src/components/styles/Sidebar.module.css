@@ -1,5 +1,6 @@
 .container{
     padding-top: 28.8px;
+    width: 316px;
 }
 .container > div{
     background: white;
@@ -8,7 +9,7 @@
     margin-bottom: 16px;
 }
 .links {
-    top: 58px;
+    top: 54px;
     color: #4d4f52;
     font-size: 0.75rem;
     padding: 12px 8px;

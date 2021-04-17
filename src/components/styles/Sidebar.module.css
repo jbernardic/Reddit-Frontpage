@@ -53,3 +53,8 @@
     color: #A3A3A4;
     font-size: 0.8rem;
 }
+@media screen and (max-width: 960px){
+    .container{
+        display: none;
+    }
+}

@@ -34,3 +34,8 @@ html, body{
     min-width: min-content;
   }
 }
+@media screen and (max-width: 640px) {
+  .grid{
+    width: 100vw;
+  }
+}

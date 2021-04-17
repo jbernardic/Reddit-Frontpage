@@ -43,7 +43,7 @@ const Post:React.FC<PostProps> = (props) =>{
                 </div>
                 <div className={styles.postContent}>
                     <div className={styles.info}>
-                        <span className={styles.infoText}><h4>r/{props.subreddit}&nbsp;</h4> • Posted by u/{props.author} {time} ago</span>
+                    <h4>r/{props.subreddit}&nbsp;</h4><span className={styles.infoText}>• Posted by u/{props.author} {time} ago</span>
                         <button className={styles.joinButton}><i className="fas fa-plus"></i>Join</button>
                     </div>
                     <div className={styles.postTitle}>{props.title}</div>

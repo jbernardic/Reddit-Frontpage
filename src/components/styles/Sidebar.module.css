@@ -37,7 +37,8 @@
 }
 
 .comCats{
-    font-size: 0.7rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 10px;
     font-weight: 600;
 }
 .comCats > div{

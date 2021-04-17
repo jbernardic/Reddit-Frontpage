@@ -20,13 +20,11 @@
     color: #0079D3;
     background: #FFF;
     font-weight: 600;
+    font-size: 14px;
 }
 .filterBox > button:hover{
     cursor: pointer;
     background: #EDEFF1 !important;
-}
-.filterBox > button > h4{
-    font-size: 1em;
 }
 .filterBox i{
     font-size: 1.2em;

@@ -49,8 +49,11 @@
     outline: none;
     color: #FFF;
     font-weight: 600;
+    font-size: 0.85rem;
+    margin-top: -2px;
     padding: 4.75px 8px;
     margin-right: 8px;
+    font-family: Arial;
     white-space: nowrap;
     margin-left: auto;
 }

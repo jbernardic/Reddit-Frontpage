@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/react-reddit-clone/static/css/main.13bd2684.chunk.css",
-    "main.js": "/react-reddit-clone/static/js/main.745575b5.chunk.js",
-    "main.js.map": "/react-reddit-clone/static/js/main.745575b5.chunk.js.map",
-    "runtime-main.js": "/react-reddit-clone/static/js/runtime-main.5331a82c.js",
-    "runtime-main.js.map": "/react-reddit-clone/static/js/runtime-main.5331a82c.js.map",
-    "static/js/2.94943c34.chunk.js": "/react-reddit-clone/static/js/2.94943c34.chunk.js",
-    "static/js/2.94943c34.chunk.js.map": "/react-reddit-clone/static/js/2.94943c34.chunk.js.map",
-    "static/js/3.3033c40e.chunk.js": "/react-reddit-clone/static/js/3.3033c40e.chunk.js",
-    "static/js/3.3033c40e.chunk.js.map": "/react-reddit-clone/static/js/3.3033c40e.chunk.js.map",
+    "main.css": "/react-reddit-clone/static/css/main.260e68e1.chunk.css",
+    "main.js": "/react-reddit-clone/static/js/main.358be4e2.chunk.js",
+    "main.js.map": "/react-reddit-clone/static/js/main.358be4e2.chunk.js.map",
+    "runtime-main.js": "/react-reddit-clone/static/js/runtime-main.9b16c13e.js",
+    "runtime-main.js.map": "/react-reddit-clone/static/js/runtime-main.9b16c13e.js.map",
+    "static/css/2.679831fc.chunk.css": "/react-reddit-clone/static/css/2.679831fc.chunk.css",
+    "static/js/2.61b5c795.chunk.js": "/react-reddit-clone/static/js/2.61b5c795.chunk.js",
+    "static/js/2.61b5c795.chunk.js.map": "/react-reddit-clone/static/js/2.61b5c795.chunk.js.map",
+    "static/js/3.cba3826d.chunk.js": "/react-reddit-clone/static/js/3.cba3826d.chunk.js",
+    "static/js/3.cba3826d.chunk.js.map": "/react-reddit-clone/static/js/3.cba3826d.chunk.js.map",
     "index.html": "/react-reddit-clone/index.html",
-    "static/css/main.13bd2684.chunk.css.map": "/react-reddit-clone/static/css/main.13bd2684.chunk.css.map",
-    "static/js/2.94943c34.chunk.js.LICENSE.txt": "/react-reddit-clone/static/js/2.94943c34.chunk.js.LICENSE.txt",
+    "static/css/2.679831fc.chunk.css.map": "/react-reddit-clone/static/css/2.679831fc.chunk.css.map",
+    "static/css/main.260e68e1.chunk.css.map": "/react-reddit-clone/static/css/main.260e68e1.chunk.css.map",
+    "static/js/2.61b5c795.chunk.js.LICENSE.txt": "/react-reddit-clone/static/js/2.61b5c795.chunk.js.LICENSE.txt",
     "static/media/logo-icon.00cf8c21.svg": "/react-reddit-clone/static/media/logo-icon.00cf8c21.svg",
     "static/media/logo-text.ad6e4195.svg": "/react-reddit-clone/static/media/logo-text.ad6e4195.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5331a82c.js",
-    "static/js/2.94943c34.chunk.js",
-    "static/css/main.13bd2684.chunk.css",
-    "static/js/main.745575b5.chunk.js"
+    "static/js/runtime-main.9b16c13e.js",
+    "static/css/2.679831fc.chunk.css",
+    "static/js/2.61b5c795.chunk.js",
+    "static/css/main.260e68e1.chunk.css",
+    "static/js/main.358be4e2.chunk.js"
   ]
 }

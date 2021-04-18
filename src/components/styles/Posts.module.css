@@ -1,9 +1,9 @@
 .posts{
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .posts > div{
+    margin-top: 10px;
     background: #FFF;
     border-radius: 4px;
     border: 1px #CCCCCC solid;

@@ -53,7 +53,7 @@ const Post:React.FC<PostProps> = (props) =>{
                         <div style={props.thumbnail.url !== "" ? {display: "none"} : {}}> </div>
                     </div>
                     <div className={styles.postOptions}>
-                        <a className={styles.commentsBtn} href="/#" ><i className="fas fa-comment-dots"></i>{num_comments} Comments</a>
+                        <a className={styles.commentsBtn} href="./#" ><i className="fas fa-comment-dots"></i>{num_comments} Comments</a>
                         <button className={styles.shareBtn}><i className="fas fa-share"></i>Share</button>
                         <button className={styles.saveBtn}><i className="fas fa-save"></i>Save</button>
                         <button className={styles.moreBtn}><i className="fas fa-ellipsis-h"></i></button>

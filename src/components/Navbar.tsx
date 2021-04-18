@@ -7,7 +7,7 @@ const Navbar = () =>{
         <header>
             <div className={styles.navbar}>
                 <div className={styles.logo}>
-                    <a href="/#">
+                    <a href="./#">
                         <LogoIcon/>
                         <LogoText/>
                     </a>
@@ -18,8 +18,8 @@ const Navbar = () =>{
                 </div>
                 <div className={styles.options}>
                     <div className={styles.loginOptions}>
-                        <a href="/#" className={styles.loginButton}>Log in</a>
-                        <a href="/#" className={styles.signupButton}>Sign up</a>
+                        <a href="./#" className={styles.loginButton}>Log in</a>
+                        <a href="./#" className={styles.signupButton}>Sign up</a>
                     </div>
                     <button className={styles.userDropdown}>
                         <i className="fas fa-user"></i>

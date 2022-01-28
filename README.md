@@ -4,4 +4,4 @@ Frontpage of reddit, made with react.
 
 ## Website
 
-https://janxy-dev.github.io/react-reddit-clone/
+https://jbernardic.github.io/react-reddit-clone/
